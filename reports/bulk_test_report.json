@@ -1,0 +1,138 @@
+[
+    {
+        "file_name": "invoice_01_text_standard.pdf",
+        "status": "Success",
+        "extracted_values": {
+            "invoice_id": "INV-1023",
+            "vendor_name": "ABC TRADERS PVT LTD",
+            "invoice_date": "2026-06-12",
+            "due_date": "2026-06-25",
+            "total_amount": 23954.0,
+            "tax_amount": 3654.0,
+            "gstin": "22ABCDE1234F1Z5",
+            "canonical_vendor_id": "VENDOR_ABC_TRADERS",
+            "currency": "INR"
+        },
+        "average_confidence": 0.9665678299416683,
+        "warnings": []
+    },
+    {
+        "file_name": "invoice_02_text_modern.pdf",
+        "status": "Success",
+        "extracted_values": {
+            "invoice_id": "INV/2026/045",
+            "vendor_name": "NOVA OFFICE SOLUTIONS LLP",
+            "invoice_date": "2026-06-14",
+            "due_date": "2026-06-29",
+            "total_amount": 35990.0,
+            "tax_amount": 5490.0,
+            "gstin": "22NOVAS1234L1Z8",
+            "canonical_vendor_id": "VENDOR_NOVA_OFFICE_SOLUTIONS",
+            "currency": "INR"
+        },
+        "average_confidence": 0.9372074768078223,
+        "warnings": []
+    },
+    {
+        "file_name": "invoice_03_text_compact.pdf",
+        "status": "Success",
+        "extracted_values": {
+            "invoice_id": "B-7781",
+            "vendor_name": "SHARMA ENTERPRISES",
+            "invoice_date": "2026-06-15",
+            "due_date": "2026-06-30",
+            "total_amount": 8968.0,
+            "tax_amount": 684.0,
+            "gstin": "23SHARM1234A1Z9",
+            "canonical_vendor_id": "VENDOR_SHARMA_ENTERPRISES",
+            "currency": "INR"
+        },
+        "average_confidence": 0.9327638794935799,
+        "warnings": []
+    },
+    {
+        "file_name": "invoice_04_text_tax_invoice.pdf",
+        "status": "Success",
+        "extracted_values": {
+            "invoice_id": "TXN-9021",
+            "vendor_name": "GREENLEAF INDUSTRIES",
+            "invoice_date": "2026-06-16",
+            "due_date": "2026-07-01",
+            "total_amount": 26668.0,
+            "tax_amount": 2034.0,
+            "gstin": "27GREEN1234I1Z2",
+            "canonical_vendor_id": "VENDOR_GREENLEAF_INDUSTRIES",
+            "currency": "INR"
+        },
+        "average_confidence": 0.9584472815956419,
+        "warnings": []
+    },
+    {
+        "file_name": "invoice_05_text_missing_due_date.pdf",
+        "status": "Success",
+        "extracted_values": {
+            "invoice_id": "REF-5542",
+            "vendor_name": "TECHNOVA SERVICES PVT LTD",
+            "invoice_date": "2026-06-18",
+            "due_date": "",
+            "total_amount": 27966.0,
+            "tax_amount": 4266.0,
+            "gstin": "27TECHN1234P1Z7",
+            "canonical_vendor_id": "VENDOR_TECHNOVA_SERVICES",
+            "currency": "INR"
+        },
+        "average_confidence": 0.946258748518712,
+        "warnings": [
+            "Missing Due Date"
+        ]
+    },
+    {
+        "file_name": "invoice_06_text_duplicate_of_01.pdf",
+        "status": "Success",
+        "extracted_values": {
+            "invoice_id": "INV-1023",
+            "vendor_name": "ABC TRADERS PVT. LIMITED",
+            "invoice_date": "2026-06-12",
+            "due_date": "2026-06-25",
+            "total_amount": 23954.0,
+            "tax_amount": 3654.0,
+            "gstin": "22ABCDE1234F1Z5",
+            "canonical_vendor_id": "VENDOR_ABC_TRADERS",
+            "currency": "INR"
+        },
+        "average_confidence": 0.9371129790856527,
+        "warnings": []
+    },
+    {
+        "file_name": "invoice_07_scanned_clean.pdf",
+        "status": "Error",
+        "error": "Tesseract OCR is not installed or not in the PATH. Please install Tesseract OCR (Windows) or configure pytesseract.tesseract_cmd."
+    },
+    {
+        "file_name": "invoice_08_scanned_ocr_noise.pdf",
+        "status": "Error",
+        "error": "Tesseract OCR is not installed or not in the PATH. Please install Tesseract OCR (Windows) or configure pytesseract.tesseract_cmd."
+    },
+    {
+        "file_name": "invoice_09_scanned_rotated.pdf",
+        "status": "Error",
+        "error": "Tesseract OCR is not installed or not in the PATH. Please install Tesseract OCR (Windows) or configure pytesseract.tesseract_cmd."
+    },
+    {
+        "file_name": "invoice_10_text_multipage.pdf",
+        "status": "Success",
+        "extracted_values": {
+            "invoice_id": "ACS-2026-330",
+            "vendor_name": "APEX CLOUD SYSTEMS PVT LTD",
+            "invoice_date": "2026-06-22",
+            "due_date": "2026-07-07",
+            "total_amount": 54870.0,
+            "tax_amount": 4185.0,
+            "gstin": "29APEXC1234S1Z0",
+            "canonical_vendor_id": "VENDOR_APEX_CLOUD_SYSTEMS",
+            "currency": "INR"
+        },
+        "average_confidence": 0.9451275264623141,
+        "warnings": []
+    }
+]

@@ -48,7 +48,7 @@ if __name__ == "__main__":
         # Default test cases
         test_samples = [
             "Tax Invoice No: GST-9987",
-            "Arora Enterprises Pvt Ltd",
+            "Sahu Furniture And Industries Pvt Ltd",
             "Due Date: 15/07/2026",
             "Total Amount Payable: Rs. 13,600.00",
             "GSTIN: 09ABCDE1234F1Z9",
