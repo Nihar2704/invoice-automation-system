@@ -42,112 +42,147 @@ def navigate_to(page):
 
 # Database Seeder for Realistic Mockups matching Screen Spec
 def seed_database_if_empty():
+    import glob
+    import shutil
+    from database import init_db
+    
+    # We will force a database recreate if it is empty to seed 25+ records
     try:
         invoices = get_all_invoices()
-        if len(invoices) > 0:
+        if len(invoices) >= 25:
             return
     except Exception:
         pass
+        
+    # Initialize DB schema
+    init_db(DEFAULT_DB_PATH)
     
-    # We will seed 3 detailed verification records to match the Activity logs
-    demo_pdf_src = os.path.join(
-        os.path.dirname(os.path.abspath(__file__)),
-        "data", "raw_invoices", "test_pack", "demo_samples", "invoice_01_text_standard.pdf"
-    )
+    # Clean the DB table if it has partial data
+    conn = sqlite3.connect(DEFAULT_DB_PATH)
+    cursor = conn.cursor()
+    cursor.execute("DELETE FROM invoices")
+    conn.commit()
     
     # Ensure raw_invoices directory exists
     os.makedirs(os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "raw_invoices"), exist_ok=True)
     
-    mock_data = [
-        {
-            "file_name": "invoice_tech_solutions.pdf",
-            "extracted_values": {
-                "invoice_id": "INV-2026-001",
-                "vendor_name": "Tech Solutions Inc.",
-                "canonical_vendor_id": "VENDOR_TECH_SOLUTIONS_INC",
-                "invoice_date": "2026-08-24",
-                "due_date": "2026-09-08",
-                "total_amount": 4250.00,
-                "tax_amount": 250.00,
-                "gstin": "22ABCDE1234F1Z5",
-                "currency": "INR"
-            },
-            "average_confidence": 0.984,
-            "status": "Verified",
-            "field_metadata": {
-                "invoice_id": {"raw_text_source": "Invoice ID: INV-2026-001", "raw_value": "INV-2026-001", "canonical_value": "INV-2026-001", "confidence": 0.99, "status": "Accepted"},
-                "vendor_name": {"raw_text_source": "Tech Solutions Inc.", "raw_value": "Tech Solutions Inc.", "canonical_value": "Tech Solutions Inc.", "confidence": 0.98, "status": "Accepted"},
-                "invoice_date": {"raw_text_source": "Date: 24/08/2026", "raw_value": "24/08/2026", "canonical_value": "2026-08-24", "confidence": 0.99, "status": "Accepted"},
-                "due_date": {"raw_text_source": "Due Date: 08/09/2026", "raw_value": "08/09/2026", "canonical_value": "2026-09-08", "confidence": 0.98, "status": "Accepted"},
-                "total_amount": {"raw_text_source": "Total: 4250.00", "raw_value": "4250.00", "canonical_value": 4250.0, "confidence": 0.99, "status": "Accepted"},
-                "tax_amount": {"raw_text_source": "Tax: 250.00", "raw_value": "250.00", "canonical_value": 250.0, "confidence": 0.99, "status": "Accepted"},
-                "gstin": {"raw_text_source": "GSTIN: 22ABCDE1234F1Z5", "raw_value": "22ABCDE1234F1Z5", "canonical_value": "22ABCDE1234F1Z5", "confidence": 0.98, "status": "Accepted"}
-            },
-            "raw_text": "Tech Solutions Inc.\nInvoice ID: INV-2026-001\nDate: 24/08/2026\nDue Date: 08/09/2026\nGSTIN: 22ABCDE1234F1Z5\nTotal: 4250.00\nTax: 250.00"
-        },
-        {
-            "file_name": "invoice_global_logistics.pdf",
-            "extracted_values": {
-                "invoice_id": "GL-8899-X",
-                "vendor_name": "Global Logistics Ltd.",
-                "canonical_vendor_id": "VENDOR_GLOBAL_LOGISTICS_LTD",
-                "invoice_date": "2026-08-24",
-                "due_date": "2026-09-10",
-                "total_amount": 12840.15,
-                "tax_amount": 840.15,
-                "gstin": "27GHIJK5678L2Z0",
-                "currency": "INR"
-            },
-            "average_confidence": 0.762,
-            "status": "Pending Review",
-            "field_metadata": {
-                "invoice_id": {"raw_text_source": "INV ID: GL-8899-X", "raw_value": "GL-8899-X", "canonical_value": "GL-8899-X", "confidence": 0.90, "status": "Accepted"},
-                "vendor_name": {"raw_text_source": "Global Logistics Ltd.", "raw_value": "Global Logistics Ltd.", "canonical_value": "Global Logistics Ltd.", "confidence": 0.85, "status": "Accepted"},
-                "invoice_date": {"raw_text_source": "Date: 24/08/2026", "raw_value": "24/08/2026", "canonical_value": "2026-08-24", "confidence": 0.88, "status": "Accepted"},
-                "due_date": {"raw_text_source": "Due by: 10/09/2026", "raw_value": "10/09/2026", "canonical_value": "2026-09-10", "confidence": 0.55, "status": "Review Needed"},
-                "total_amount": {"raw_text_source": "Net Amount: 12840.15", "raw_value": "12840.15", "canonical_value": 12840.15, "confidence": 0.70, "status": "Review Needed"},
-                "tax_amount": {"raw_text_source": "Tax: 840.15", "raw_value": "840.15", "canonical_value": 840.15, "confidence": 0.75, "status": "Review Needed"},
-                "gstin": {"raw_text_source": "GSTIN: 27GHIJK5678L2Z0", "raw_value": "27GHIJK5678L2Z0", "canonical_value": "27GHIJK5678L2Z0", "confidence": 0.80, "status": "Accepted"}
-            },
-            "raw_text": "Global Logistics Ltd.\nINV ID: GL-8899-X\nDate: 24/08/2026\nDue by: 10/09/2026\nGSTIN: 27GHIJK5678L2Z0\nNet Amount: 12840.15\nTax: 840.15"
-        },
-        {
-            "file_name": "invoice_techno_logic.pdf",
-            "extracted_values": {
-                "invoice_id": "INV-8842-X",
-                "vendor_name": "Techno-Logic Solutions",
-                "canonical_vendor_id": "VENDOR_TECHNO_LOGIC_SOLUTIONS",
-                "invoice_date": "2026-08-23",
-                "due_date": "2026-09-07",
-                "total_amount": 13747.75,
-                "tax_amount": 1047.75,
-                "gstin": "22AAAAA0000A1Z5",
-                "currency": "INR"
-            },
-            "average_confidence": 0.950,
-            "status": "Verified",
-            "field_metadata": {
-                "invoice_id": {"raw_text_source": "INV-8842-X", "raw_value": "INV-8842-X", "canonical_value": "INV-8842-X", "confidence": 0.96, "status": "Accepted"},
-                "vendor_name": {"raw_text_source": "TECHNO-LOGIC SOLUTIONS", "raw_value": "TECHNO-LOGIC SOLUTIONS", "canonical_value": "Techno-Logic Solutions", "confidence": 0.88, "status": "Accepted"},
-                "invoice_date": {"raw_text_source": "10/24/2023", "raw_value": "10/24/2023", "canonical_value": "2026-08-23", "confidence": 0.91, "status": "Accepted"},
-                "due_date": {"raw_text_source": "11/24/2023", "raw_value": "11/24/2023", "canonical_value": "2026-09-07", "confidence": 0.62, "status": "Review Needed"},
-                "total_amount": {"raw_text_source": "13,747.75", "raw_value": "13,747.75", "canonical_value": 13747.75, "confidence": 0.95, "status": "Accepted"},
-                "tax_amount": {"raw_text_source": "1,047.75", "raw_value": "1,047.75", "canonical_value": 1047.75, "confidence": 0.94, "status": "Accepted"},
-                "gstin": {"raw_text_source": "22AAAAA0000A1Z5", "raw_value": "22AAAAA0000A1Z5", "canonical_value": "22AAAAA0000A1Z5", "confidence": 0.98, "status": "Accepted"}
-            },
-            "raw_text": "TECHNO-LOGIC SOLUTIONS\nINV-8842-X\n10/24/2023\n11/24/2023\n13,747.75\n22AAAAA0000A1Z5"
-        }
+    # 1. Parse the 10 demo PDF files programmatically using the Pipeline
+    demo_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "raw_invoices", "test_pack", "demo_samples")
+    pdf_files = glob.glob(os.path.join(demo_dir, "*.pdf"))
+    
+    # Instantiating parser locally
+    from prediction import InvoiceParserPipeline
+    pipeline_local = None
+    try:
+        pipeline_local = InvoiceParserPipeline()
+    except Exception as e:
+        print(f"Seeder warning: Failed to load ML model, using fallback: {e}")
+        
+    for pdf_path in sorted(pdf_files):
+        filename = os.path.basename(pdf_path)
+        try:
+            if pipeline_local:
+                result = pipeline_local.process_invoice(pdf_path)
+            else:
+                result = {"error": "Pipeline unavailable"}
+                
+            if "error" in result:
+                # Mock result for seeder robustness
+                vals = {
+                    "invoice_id": "INV-MOCK-" + filename.split("_")[1],
+                    "vendor_name": "Standard Mock Corp",
+                    "canonical_vendor_id": "VENDOR_MOCK_CORP",
+                    "invoice_date": "2026-08-01",
+                    "due_date": "2026-08-15",
+                    "total_amount": 1500.00,
+                    "tax_amount": 100.00,
+                    "currency": "INR",
+                    "gstin": "27ABCDE1234F1Z5"
+                }
+                result = {
+                    "file_name": filename,
+                    "extracted_values": vals,
+                    "average_confidence": 0.82,
+                    "field_metadata": {k: {"confidence": 0.82, "status": "Review Needed"} for k in vals},
+                    "raw_text": "Specimen mock text"
+                }
+                
+            vals = result["extracted_values"]
+            meta = result["field_metadata"]
+            
+            # Determine status
+            avg_conf = result["average_confidence"]
+            status = "Verified" if avg_conf >= 0.85 and "missing" not in filename else "Pending Review"
+            
+            # Duplicate flags
+            dup_flag = 1 if "duplicate" in filename else 0
+            
+            cursor.execute("""
+            INSERT INTO invoices (
+                file_name, invoice_id, vendor_name, canonical_vendor_id,
+                invoice_date, due_date, total_amount, tax_amount,
+                currency, gstin, status, duplicate_flag,
+                average_confidence, field_metadata_json, created_at
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            """, (
+                filename,
+                vals.get("invoice_id"),
+                vals.get("vendor_name"),
+                vals.get("canonical_vendor_id"),
+                vals.get("invoice_date"),
+                vals.get("due_date"),
+                vals.get("total_amount"),
+                vals.get("tax_amount"),
+                vals.get("currency", "INR"),
+                vals.get("gstin"),
+                status,
+                dup_flag,
+                avg_conf,
+                json.dumps(meta),
+                datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            ))
+            
+            record_id = cursor.lastrowid
+            
+            # Copy source PDF to raw_invoices directory so visual previews work natively
+            dest_pdf = os.path.join(
+                os.path.dirname(os.path.abspath(__file__)),
+                "data", "raw_invoices", f"{record_id}_{filename}"
+            )
+            shutil.copy(pdf_path, dest_pdf)
+            
+        except Exception as ex:
+            print(f"Error seeding PDF {filename}: {ex}")
+            
+    # 2. Seed 18 extra realistic historical billing entries to reach 25 records
+    extra_vendors = [
+        ("Tech Solutions Inc.", "VENDOR_TECH_SOLUTIONS_INC", "22ABCDE1234F1Z5"),
+        ("Global Logistics Ltd.", "VENDOR_GLOBAL_LOGISTICS_LTD", "27GHIJK5678L2Z0"),
+        ("Techno-Logic Solutions", "VENDOR_TECHNO_LOGIC_SOLUTIONS", "22AAAAA0000A1Z5"),
+        ("APEX CLOUD SYSTEMS PVT LTD", "VENDOR_APEX_CLOUD_SYSTEMS_PVT_LTD", "27ABCDE1234F1Z5"),
+        ("GREENLEAF INDUSTRIES", "VENDOR_GREENLEAF_INDUSTRIES", "22BBBBB0000A1Z5"),
+        ("SHANDILYA FACILITY SERVICES", "VENDOR_SHANDILYA_FACILITY_SERVICES", "22ABCDE1234F1Z5")
     ]
     
-    # Save seed items into DB and copy mock PDF documents
-    conn = sqlite3.connect(DEFAULT_DB_PATH)
-    cursor = conn.cursor()
-    
-    import shutil
-    for item in mock_data:
-        metadata_json = json.dumps(item["field_metadata"])
-        created_at = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        vals = item["extracted_values"]
+    for idx in range(18):
+        v_name, v_id, gstin = extra_vendors[idx % len(extra_vendors)]
+        inv_id = f"INV-2026-X{100 + idx}"
+        amount = 4500.00 + idx * 3750.50
+        tax = amount * 0.18
+        date_str = f"2026-06-{10 + idx % 15:02d}"
+        due_str = f"2026-07-{10 + idx % 15:02d}"
+        status = "Verified" if idx % 3 != 0 else "Pending Review"
+        conf = 0.90 + (idx % 10) * 0.008
+        
+        meta = {
+            "invoice_id": {"confidence": conf, "status": "Accepted"},
+            "vendor_name": {"confidence": conf, "status": "Accepted"},
+            "invoice_date": {"confidence": conf, "status": "Accepted"},
+            "due_date": {"confidence": conf, "status": "Accepted"},
+            "total_amount": {"confidence": conf, "status": "Accepted"},
+            "tax_amount": {"confidence": conf, "status": "Accepted"},
+            "gstin": {"confidence": conf, "status": "Accepted"}
+        }
         
         cursor.execute("""
         INSERT INTO invoices (
@@ -157,30 +192,22 @@ def seed_database_if_empty():
             average_confidence, field_metadata_json, created_at
         ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 0, ?, ?, ?)
         """, (
-            item["file_name"],
-            vals.get("invoice_id"),
-            vals.get("vendor_name"),
-            vals.get("canonical_vendor_id"),
-            vals.get("invoice_date"),
-            vals.get("due_date"),
-            vals.get("total_amount"),
-            vals.get("tax_amount"),
-            vals.get("currency", "INR"),
-            vals.get("gstin"),
-            item["status"],
-            item["average_confidence"],
-            metadata_json,
-            created_at
+            f"historical_invoice_{idx}.pdf",
+            inv_id,
+            v_name,
+            v_id,
+            date_str,
+            due_str,
+            amount,
+            tax,
+            "INR",
+            gstin,
+            status,
+            conf,
+            json.dumps(meta),
+            f"2026-06-{10 + idx % 15:02d} 10:00:00"
         ))
         
-        record_id = cursor.lastrowid
-        if os.path.exists(demo_pdf_src):
-            dest_pdf = os.path.join(
-                os.path.dirname(os.path.abspath(__file__)),
-                "data", "raw_invoices", f"{record_id}_{item['file_name']}"
-            )
-            shutil.copy(demo_pdf_src, dest_pdf)
-            
     conn.commit()
     conn.close()
 
