@@ -1,0 +1,501 @@
+text,label
+Tax Invoice By: Lotus Facility Services,VENDOR_NAME
+Prepared on behalf of supplier,OTHER
+Amount Payable By: 26/01/26,DUE_DATE
+Approval Status: Pending,OTHER
+"Ship To: 11, Industrial Area, Durg",OTHER
+Payee: Western Office Mart,VENDOR_NAME
+Document No: AP/26/0011,INVOICE_ID
+Central GST: INR 21982.00,TAX_AMOUNT
+"Total GST: ₹ 4,721.00",TAX_AMOUNT
+Invoice Code: GST-2026-1020,INVOICE_ID
+"Final Amount: INR 132,334",TOTAL_AMOUNT
+GST Invoice Number: INV/26/0036,INVOICE_ID
+Our GSTIN: 19NSXCH1663N5Z3,GSTIN
+"Payable Amount: ₹ 141,715.00",TOTAL_AMOUNT
+GSTIN/UIN: 27PUZEJ1527JWZ7,GSTIN
+"Dated: March 20, 2026",INVOICE_DATE
+Our GSTIN: 24XCHMR1425TQZ1,GSTIN
+"Payable Amount: Rs. 29,143.00",TOTAL_AMOUNT
+GSTIN of Supplier: 07OTYDI1374YNZY,GSTIN
+"CGST: 17,351.00 INR",TAX_AMOUNT
+Dated: 19-May-2026,INVOICE_DATE
+GST @18%: INR 11878.00,TAX_AMOUNT
+Bill Date: 04 June 2026,INVOICE_DATE
+"Subtotal: INR 7,830",OTHER
+"Total Value: ₹ 166,731.00",TOTAL_AMOUNT
+Tax Total: INR 18614.00,TAX_AMOUNT
+Payment Due On: 2026-06-05,DUE_DATE
+"Total Payable After Tax: Rs 213,636",TOTAL_AMOUNT
+Branch: Jaipur,OTHER
+Account No: XXXX1774,OTHER
+Invoice Creation Date - 2026/06/08,INVOICE_DATE
+"GST Tax Value: ₹16,088",TAX_AMOUNT
+LR No: LR-202600043,OTHER
+GST Number - 27LQVAF1357RMZL,GSTIN
+PAN: UVWPS1260O,OTHER
+GSTIN Number: 22EJOTY1170SBZM,GSTIN
+Tax Invoice No: REF00027,INVOICE_ID
+Please mention invoice number while making payment,OTHER
+Scan QR code to pay,OTHER
+Royal Transport Agency,VENDOR_NAME
+Service Provider: Aarav Manufacturing Co,VENDOR_NAME
+Remarks: Goods once sold will not be taken back,OTHER
+Bill Date: 03/08/26,INVOICE_DATE
+Issued On: 11/05/2026,INVOICE_DATE
+"Total Payable After Tax: INR 157,350",TOTAL_AMOUNT
+Issued On: 12-03-2026,INVOICE_DATE
+Invoice Date: 2026/03/04,INVOICE_DATE
+Issued On: 11-Jan-2026,INVOICE_DATE
+"IGST: ₹ 1,353.00",TAX_AMOUNT
+"GST Payable: Rs. 19,877.00",TAX_AMOUNT
+GST Registration No: 09OTYDI1816YEZC,GSTIN
+Invoice Code: DOC-2026-1040,INVOICE_ID
+Invoice Raised On: 16-06-2026,INVOICE_DATE
+Invoice Dt: 29/04/26,INVOICE_DATE
+"Service Period: 03-09-2026 to October 03, 2026",OTHER
+"Total GST: Rs. 13,141.00",TAX_AMOUNT
+GSTIN Number: 09KPUZE1646G4ZQ,GSTIN
+Original Invoice No - IN-2026-1055,INVOICE_ID
+Final Payment Date: 2026/03/30,DUE_DATE
+"Due by August 21, 2026",DUE_DATE
+Total Due: INR 144842.00,TOTAL_AMOUNT
+"Total Amount Due: ₹ 91,683.00",TOTAL_AMOUNT
+"CGST: 8,931",TAX_AMOUNT
+"Total Amount Due: Rs. 204,255.00",TOTAL_AMOUNT
+Due Date: 2026/06/02,DUE_DATE
+"CGST 9%: ₹ 14,825.25",TAX_AMOUNT
+Invoice Ref: SI/2026/594,INVOICE_ID
+Invoice Creation Date - 09/04/2026,INVOICE_DATE
+Invoice Generated On: 22-Jul-2026,INVOICE_DATE
+"Final Bill Amount: 47,905",TOTAL_AMOUNT
+"Total Amount: Rs. 4,127.00",TOTAL_AMOUNT
+Terms Due Date: 23-Feb-2026,DUE_DATE
+E. & O.E.,OTHER
+Payee: BluePeak Technologies Pvt Ltd,VENDOR_NAME
+Payee: Vikas Pharma Distributors,VENDOR_NAME
+"State GST: 13,983.00 INR",TAX_AMOUNT
+Buyer: Finance Office,OTHER
+Total Payable After Tax: INR 44778.00,TOTAL_AMOUNT
+Supplier GSTIN: 09CHMRW1306WJZI,GSTIN
+"Grand Total: INR 57,286",TOTAL_AMOUNT
+Date: 06 July 2026,INVOICE_DATE
+GSTIN/UIN No. 33QVAFK1238UFZ2,GSTIN
+Apex Furniture Works,VENDOR_NAME
+Reference No: TAXINV/2026/319,INVOICE_ID
+GST No: 33CHMRW1748WAZW,GSTIN
+"Total Amount: 60,413.00 INR",TOTAL_AMOUNT
+Final Payment Date: 14 May 2026,DUE_DATE
+Invoice Generated On: 23/01/26,INVOICE_DATE
+"Payable Amount: 198,001",TOTAL_AMOUNT
+Final Payment Date: 05/07/26,DUE_DATE
+Payment to be made on or before 03/06/26,DUE_DATE
+Settlement Due Date: 02/05/26,DUE_DATE
+Settlement Due Date: 2026-08-08,DUE_DATE
+Net 30 Due On: 22-08-2026,DUE_DATE
+GST Number - 24BGLQV1595L1ZN,GSTIN
+Last Date of Payment: 21-07-2026,DUE_DATE
+Billed By: Greenfield Industries,VENDOR_NAME
+"Net 15 Due Date: March 14, 2026",DUE_DATE
+Inv No. REF-2331,INVOICE_ID
+"SGST: ₹9,352",TAX_AMOUNT
+Vendor: City Print Solutions,VENDOR_NAME
+Supplier Name: Zenith Computer Care,VENDOR_NAME
+Reverse Charge: No,OTHER
+GSTIN: 29ZEJOT1731P9ZJ,GSTIN
+PO Number: PO-202600030,OTHER
+Invoice Dt: 2026-06-28,INVOICE_DATE
+Website: www.pearl.in,OTHER
+GST No: 07GLQVA1034O3ZQ,GSTIN
+"GST Payable: ₹ 11,457.00",TAX_AMOUNT
+Invoice Number: TXN00002,INVOICE_ID
+Tax Invoice Date: 2026-07-30,INVOICE_DATE
+Note: Amounts are rounded to nearest rupee,OTHER
+"Grand Total Incl. GST: Rs. 154,223.00",TOTAL_AMOUNT
+Invoice Code: INV-2026-1060,INVOICE_ID
+"Taxable GST Amount: ₹ 8,089.00",TAX_AMOUNT
+Vendor GSTIN: 29VAFKP1561XYZX,GSTIN
+"Total Tax: 2,195",TAX_AMOUNT
+Net Amount Payable: INR 94810.50,TOTAL_AMOUNT
+Voucher No: BILL-0481,INVOICE_ID
+Invoice #: INV/2026/264,INVOICE_ID
+No signature required,OTHER
+Billed By: A.B.C. Traders Pvt. Limited,VENDOR_NAME
+"Total GST: ₹ 21,561.00",TAX_AMOUNT
+"Total Due: ₹201,128",TOTAL_AMOUNT
+Quotation Ref: QT-202600061,OTHER
+"Amount Due: Rs 63,540",TOTAL_AMOUNT
+M/s BluePeak Technologies Pvt Ltd,VENDOR_NAME
+Billing Date: 16-Mar-2026,INVOICE_DATE
+Duplicate for Supplier,OTHER
+GSTIN of Supplier: 23EJOTY1612S2Z0,GSTIN
+Terms Due Date: 16-04-2026,DUE_DATE
+For Horizon Security Services,OTHER
+Date of Invoice: 12/06/2026,INVOICE_DATE
+"Net Payable: 10,381.00 INR",TOTAL_AMOUNT
+Date of Invoice: 12-Feb-2026,INVOICE_DATE
+Invoice Number: SI00042,INVOICE_ID
+Central GST: INR 5142.00,TAX_AMOUNT
+"CGST 9%: Rs. 6,405.25",TAX_AMOUNT
+Invoice Generated On: 2026-03-24,INVOICE_DATE
+"Subtotal Before Tax: 52,543",OTHER
+Place of Supply: Tamil Nadu,OTHER
+"Less Advance Received: ₹53,276",OTHER
+Invoice #: DOC/2026/044,INVOICE_ID
+Net 30 Due On: 2026-04-02,DUE_DATE
+Exchange Rate: 1.00,OTHER
+"Final Bill Amount: Rs. 104,191.00",TOTAL_AMOUNT
+Payment Due On: 27/02/26,DUE_DATE
+Pay Before: 18-05-2026,DUE_DATE
+Invoice ID VCH-2146,INVOICE_ID
+"GST Tax Value: Rs 7,668",TAX_AMOUNT
+"SGST 9%: INR 6,826",TAX_AMOUNT
+"Final Amount: ₹76,048",TOTAL_AMOUNT
+Terms Due Date: 2026/09/06,DUE_DATE
+"Total Invoice Value: Rs 138,588",TOTAL_AMOUNT
+Issued On: 2026/07/10,INVOICE_DATE
+"Invoice Dt: August 27, 2026",INVOICE_DATE
+Contact Person: Ramesh Kumar,OTHER
+"Total Payable: Rs. 129,207.00",TOTAL_AMOUNT
+This is a computer generated invoice,OTHER
+"State GST: 22,403",TAX_AMOUNT
+Document Date: 28/03/26,INVOICE_DATE
+Service Provider: Omkar Business Solutions,VENDOR_NAME
+"IGST: Rs. 9,773.00",TAX_AMOUNT
+Pay Before: 24/08/2026,DUE_DATE
+Supplier: Alpha Cloud Services,VENDOR_NAME
+Tax Invoice Date: 31/05/26,INVOICE_DATE
+Invoice ID TXN-1406,INVOICE_ID
+Final Amount: INR 19762.50,TOTAL_AMOUNT
+Service Provider: Sunrise Electricals,VENDOR_NAME
+Vehicle No: CG04AB1992,OTHER
+Original Invoice No - REF-2026-1015,INVOICE_ID
+"Grand Total: ₹1,000",TOTAL_AMOUNT
+Invoice Raised On: 17-Apr-2026,INVOICE_DATE
+Please Pay By: 11-02-2026,DUE_DATE
+Seller: Metro Print & Pack,VENDOR_NAME
+Declaration: We declare that this invoice shows actual price,OTHER
+"Central GST: INR 13,562",TAX_AMOUNT
+Voucher No: CNTR-1221,INVOICE_ID
+"Net Payable: Rs. 179,239.00",TOTAL_AMOUNT
+Supplier Name: Urban Cleaning Services,VENDOR_NAME
+Document No: REF/26/0051,INVOICE_ID
+Original for Recipient,OTHER
+From: Orbit Infotech LLP,VENDOR_NAME
+"Tax Collected: 7,247.00 INR",TAX_AMOUNT
+Supplier: M/s Ashoka Tools,VENDOR_NAME
+GSTIN/UIN No. 09GLQVA1476OTZ4,GSTIN
+Horizon Security Services,VENDOR_NAME
+Date: 07-01-2026,INVOICE_DATE
+Payment Deadline: 06/08/26,DUE_DATE
+Amount Due: INR 119826.00,TOTAL_AMOUNT
+Terms Due Date: 23/07/2026,DUE_DATE
+"SGST: Rs 17,772",TAX_AMOUNT
+Amount Payable By: 02-Aug-2026,DUE_DATE
+"Integrated GST: ₹5,984",TAX_AMOUNT
+"IGST: ₹ 18,193.00",TAX_AMOUNT
+Payment Due: 22-Jan-2026,DUE_DATE
+"Invoice Total: 22,889",TOTAL_AMOUNT
+Bill Number: VCH/26/0046,INVOICE_ID
+Total Invoice Value: INR 194874.00,TOTAL_AMOUNT
+Company Name: Kaveri Logistics LLP,VENDOR_NAME
+"Final Bill Amount: ₹ 216,763.00",TOTAL_AMOUNT
+Billed By: Rajdhani Office Solutions,VENDOR_NAME
+Inv No. AP-0851,INVOICE_ID
+Unit: Nos,OTHER
+Sales Invoice No: BILL00037,INVOICE_ID
+Email: accounts@omkar.in,OTHER
+"Final Amount: Rs 188,620",TOTAL_AMOUNT
+Invoice Number: TXN00062,INVOICE_ID
+"Amount Due: INR 7,254",TOTAL_AMOUNT
+Seller: Mahalaxmi Enterprises,VENDOR_NAME
+Company GSTIN 22QVAFK1680U6ZG,GSTIN
+Invoice #: DOC/2026/704,INVOICE_ID
+"Taxable GST Amount: Rs. 16,509.00",TAX_AMOUNT
+Transporter: Crown Electrical Works,OTHER
+"SGST 9%: INR 23,666",TAX_AMOUNT
+Bill Ref: IN/2026/209,INVOICE_ID
+M/s Greenfield Industries,VENDOR_NAME
+"Net Payable: ₹ 66,667.00",TOTAL_AMOUNT
+Beneficiary Name: Lotus Facility Services,OTHER
+Qty: 9,OTHER
+Please Pay By: 20/05/2026,DUE_DATE
+"Amount Due: ₹176,112",TOTAL_AMOUNT
+"Total Amount: 172,985",TOTAL_AMOUNT
+Buyer GSTIN: 22WBGLQ5250I6ZA,OTHER
+Due Date: 10-01-2026,DUE_DATE
+"Tax Amount: ₹2,616",TAX_AMOUNT
+"Settlement Due Date: September 22, 2026",DUE_DATE
+IRN: 0000005555555505ABCDEF4365,OTHER
+Invoice Date: 03 May 2026,INVOICE_DATE
+GST ID: 29NSXCH1221NEZP,GSTIN
+Invoice No: TAXINV/26/0041,INVOICE_ID
+Invoice Raised On: 15/08/2026,INVOICE_DATE
+HSN/SAC: 8514,OTHER
+Tax Invoice Date: 01 April 2026,INVOICE_DATE
+"Balance Due: INR 182,366",TOTAL_AMOUNT
+Service Provider: Kaveri Logistics LLP,VENDOR_NAME
+Invoice No: CNTR/26/0021,INVOICE_ID
+"Amount to be Paid: INR 107,318",TOTAL_AMOUNT
+Pay Before: 27-Mar-2026,DUE_DATE
+Seller GSTIN: 19BGLQV1153LAZ9,GSTIN
+"Total Payable: ₹ 16,635.00",TOTAL_AMOUNT
+Terms and Conditions Apply,OTHER
+GST Number - 08VAFKP1119X8ZJ,GSTIN
+Warehouse: Kolkata Central Store,OTHER
+GST Amount: INR 8510.25,TAX_AMOUNT
+"Net Amount Payable: INR 207,382",TOTAL_AMOUNT
+Company GSTIN 23AFKPU1442ARZE,GSTIN
+Bill Ref: AP/2026/649,INVOICE_ID
+Vendor: Kiran Food Supplies,VENDOR_NAME
+Ref Number: VCH-2026-1010,INVOICE_ID
+From: Sharma Enterprises,VENDOR_NAME
+Net 15 Due Date: 25/09/2026,DUE_DATE
+Seller GSTIN: 08HMRWB1629Z3ZD,GSTIN
+"Net Payable: 122,953",TOTAL_AMOUNT
+"Total Due: INR 32,270",TOTAL_AMOUNT
+Tax Invoice By: Sunrise Electricals,VENDOR_NAME
+Due by 07 February 2026,DUE_DATE
+"Document Date: July 26, 2026",INVOICE_DATE
+Company Name: Narmada Packaging Pvt Ltd,VENDOR_NAME
+"GST @18%: INR 20,298",TAX_AMOUNT
+Invoice Ref: VCH/2026/374,INVOICE_ID
+"Tax Collected: 24,087.00 INR",TAX_AMOUNT
+"Total Value: Rs. 54,159.00",TOTAL_AMOUNT
+Supplier: Daksh IT Services,VENDOR_NAME
+Document Number: GST00032,INVOICE_ID
+"Total Due: Rs 88,556",TOTAL_AMOUNT
+Invoice ID SI-0666,INVOICE_ID
+"Final Bill Amount: 160,477.00 INR",TOTAL_AMOUNT
+Bill Date: 2026/04/05,INVOICE_DATE
+"Output GST: Rs 21,140",TAX_AMOUNT
+Payee: Bharat Stationery Mart,VENDOR_NAME
+From: TechNest Solutions Pvt Ltd,VENDOR_NAME
+Vendor: Sharma Enterprises,VENDOR_NAME
+"Tax Amount: Rs 11,036",TAX_AMOUNT
+GSTIN/UIN: 08ZEJOT1289PIZ5,GSTIN
+Due Date: 18/04/2026,DUE_DATE
+GSTIN: 24TYDIN1255BGZF,GSTIN
+Vendor GSTIN: 24PUZEJ1085J6ZT,GSTIN
+Thank you for your business,OTHER
+GST ID: 27TYDIN1697B7ZT,GSTIN
+Tax Invoice Date: 2026/01/31,INVOICE_DATE
+Bill No: BILL-2026-1025,INVOICE_ID
+Payment to be made on or before 2026/02/26,DUE_DATE
+Bill Date: 04/02/2026,INVOICE_DATE
+Invoice No: BILL/26/0001,INVOICE_ID
+Supplier GSTIN: 07SXCHM1544QXZK,GSTIN
+Due Date: 17 July 2026,DUE_DATE
+GSTIN/UIN No. 07WBGLQ1714I8Z6,GSTIN
+Invoice Dt: 28 February 2026,INVOICE_DATE
+Payee: Neelkanth Chemicals Pvt Ltd,VENDOR_NAME
+Document No: IN/26/0031,INVOICE_ID
+Invoice #: GST/2026/484,INVOICE_ID
+Supplier GSTIN: 33MRWBG1068C5ZG,GSTIN
+"Billing Address: 10, Industrial Area, Raipur",OTHER
+Rapid Courier Services,VENDOR_NAME
+"Shipping Charges: Rs 9,296",OTHER
+GSTIN: 27DINSX1017H2ZD,GSTIN
+M/s Prime Network Systems,VENDOR_NAME
+Subject to Raipur Jurisdiction,OTHER
+"GST Payable: Rs. 3,037.00",TAX_AMOUNT
+Please Pay By: 2026/07/04,DUE_DATE
+"Pay Before: February 10, 2026",DUE_DATE
+E-Way Bill No: EWB202600044,OTHER
+Payment Due: 15-03-2026,DUE_DATE
+Warranty: As per manufacturer policy,OTHER
+Amount Payable By: 2026-05-04,DUE_DATE
+Round Off: 0.00,OTHER
+"Total Amount Due: 35,397.00 INR",TOTAL_AMOUNT
+"Balance Due: Rs 13,508",TOTAL_AMOUNT
+Sales Invoice No: CNTR00057,INVOICE_ID
+Billed By: Saraswati Paper Products,VENDOR_NAME
+GSTIN of Supplier: 22UZEJO1850MGZ2,GSTIN
+Payment Terms: Net 45 days,OTHER
+GST Registration No: 23SXCHM1102Q7Z6,GSTIN
+SGST 9%: INR 15246.00,TAX_AMOUNT
+"Invoice Total: ₹ 191,747.00",TOTAL_AMOUNT
+GSTIN/UIN: 29JOTYD1051V4Z3,GSTIN
+"Amount to be Paid: ₹51,032",TOTAL_AMOUNT
+Document Date: 27 January 2026,INVOICE_DATE
+Tax Invoice ID: INV-1776,INVOICE_ID
+Supplier Name: Delta Industrial Spares,VENDOR_NAME
+"Grand Total Incl. GST: 97,937",TOTAL_AMOUNT
+"CGST 9%: Rs. 23,245.25",TAX_AMOUNT
+"Total Invoice Value: ₹26,016",TOTAL_AMOUNT
+"Grand Total: Rs 113,572",TOTAL_AMOUNT
+Company Name: Pearl Safety Equipments,VENDOR_NAME
+Date of Invoice: 13-04-2026,INVOICE_DATE
+Prepared On: 23-Aug-2026,INVOICE_DATE
+GSTIN Number: 33UZEJO1408MPZO,GSTIN
+Invoice Creation Date - 08-02-2026,INVOICE_DATE
+"Total Amount Due: 147,969",TOTAL_AMOUNT
+Supplier: Global Media House LLP,VENDOR_NAME
+GST Number - 19RWBGL1833FFZP,GSTIN
+Supplier: Bharat Stationery Mart,VENDOR_NAME
+Billed By: Rudra Engineering Works,VENDOR_NAME
+Delivery Challan No: DC-202600029,OTHER
+Invoice Date: 03/01/2026,INVOICE_DATE
+"Net Amount Payable: Rs 38,524",TOTAL_AMOUNT
+Due by 2026-07-07,DUE_DATE
+Please Pay By: 18 August 2026,DUE_DATE
+"Tax Total: INR 10,194",TAX_AMOUNT
+Last Date of Payment: 2026-03-01,DUE_DATE
+Payment to be made on or before 12 April 2026,DUE_DATE
+"Total Tax: 19,035",TAX_AMOUNT
+GSTIN/UIN: 24FKPUZ1765DBZ9,GSTIN
+"Amount to be Paid: Rs 163,604",TOTAL_AMOUNT
+GST No: 22MRWBG1510CVZU,GSTIN
+Company GSTIN 07KPUZE1204GDZC,GSTIN
+Company Name: Sundaram IT Solutions,VENDOR_NAME
+"GST @12%: 20,719.00 INR",TAX_AMOUNT
+Ack Date: 2026/08/24,OTHER
+"Total Amount: ₹ 116,699.00",TOTAL_AMOUNT
+Date: 08/03/2026,INVOICE_DATE
+ABC Traders Pvt Ltd,VENDOR_NAME
+"Invoice Total: Rs. 79,175.00",TOTAL_AMOUNT
+Order ID: ORD-202600031,OTHER
+Net 15 Due Date: 28-Apr-2026,DUE_DATE
+Proforma Invoice Ref: PI-202600062,OTHER
+"Total Payable After Tax: ₹101,064",TOTAL_AMOUNT
+Generated Date: 19-08-2026,INVOICE_DATE
+Invoice Number: VCH00022,INVOICE_ID
+M/s Pragati Steel Traders,VENDOR_NAME
+GST Invoice Number: GST/26/0056,INVOICE_ID
+State Code: 24,OTHER
+"Output GST: Rs 4,300",TAX_AMOUNT
+GSTIN of Supplier: 09YDINS1136E9ZW,GSTIN
+Payment Status: Unpaid,OTHER
+"Output GST: ₹12,720",TAX_AMOUNT
+Seller: Silverline Consultants,VENDOR_NAME
+Reference No: BILL/2026/539,INVOICE_ID
+"Total Value: 110,445.00 INR",TOTAL_AMOUNT
+Support Email: support@greenfield.com,OTHER
+Payment Due: 2026/08/05,DUE_DATE
+"Total Payable: 72,921",TOTAL_AMOUNT
+"Amount Payable By: June 18, 2026",DUE_DATE
+Supplier GSTIN: 23INSXC1782KCZM,GSTIN
+"GST Amount: INR 16,930",TAX_AMOUNT
+Document Number: DOC00052,INVOICE_ID
+Tax Invoice By: Metro Hardware and Tools,VENDOR_NAME
+Bill No: TAXINV-2026-1065,INVOICE_ID
+"State GST: 5,563",TAX_AMOUNT
+Prepared On: 2026-04-25,INVOICE_DATE
+Balance Due: INR 69794.00,TOTAL_AMOUNT
+Payment Deadline: 15 June 2026,DUE_DATE
+Ref Number: SI-2026-1030,INVOICE_ID
+"Consignee Address: 61, Industrial Area, Durg",OTHER
+Seller: Orbit Infotech LLP,VENDOR_NAME
+Service Provider: Pioneer Textiles,VENDOR_NAME
+SGST: Rs 932,TAX_AMOUNT
+"GST Tax Value: Rs 24,508",TAX_AMOUNT
+UPI ID: pragati@upi,OTHER
+"Tax Collected: 15,667",TAX_AMOUNT
+"Billing Date: January 15, 2026",INVOICE_DATE
+Payment Deadline: 17/03/2026,DUE_DATE
+"Payment Due On: July 20, 2026",DUE_DATE
+Tax Invoice ID: DOC-1036,INVOICE_ID
+Tax Invoice By: Veda Consulting Group,VENDOR_NAME
+Dated: 2026-01-19,INVOICE_DATE
+Date of Invoice: 2026/08/11,INVOICE_DATE
+Settlement Due Date: 11 March 2026,DUE_DATE
+Tax Total: INR 1774.00,TAX_AMOUNT
+Ref Number: TXN-2026-1050,INVOICE_ID
+M/s Crown Electrical Works,VENDOR_NAME
+Net 15 Due Date: 19-06-2026,DUE_DATE
+Net 30 Due On: 01-Jul-2026,DUE_DATE
+Vendor: Skyline Enterprises,VENDOR_NAME
+TDS applicable as per rules,OTHER
+"Payable Amount: 85,429.00 INR",TOTAL_AMOUNT
+Invoice No: BILL/26/0061,INVOICE_ID
+Our GSTIN: 27HMRWB1187ZCZZ,GSTIN
+IFSC Code: STAT0101843,OTHER
+"GST @12%: 12,299",TAX_AMOUNT
+"Net Amount Payable: ₹151,096",TOTAL_AMOUNT
+Seller GSTIN: 29RWBGL1391FOZB,GSTIN
+Mode of Payment: NEFT/RTGS,OTHER
+Voucher No: TAXINV-1961,INVOICE_ID
+"Tax Amount: ₹19,456",TAX_AMOUNT
+Date: 2026/05/07,INVOICE_DATE
+Seller: Metro Hardware and Tools,VENDOR_NAME
+Invoice Creation Date - 07 August 2026,INVOICE_DATE
+Generated Date: 2026-02-20,INVOICE_DATE
+"Taxable GST Amount: ₹ 24,929.00",TAX_AMOUNT
+Document Number: INV00012,INVOICE_ID
+Last Date of Payment: 30-May-2026,DUE_DATE
+Tax Invoice No: IN00007,INVOICE_ID
+Generated Date: 20-Jun-2026,INVOICE_DATE
+Authorized Signatory,OTHER
+Sales Invoice No: TAXINV00017,INVOICE_ID
+Final Payment Date: 2026-10-11,DUE_DATE
+Payment Deadline: 2026/05/01,DUE_DATE
+Currency: INR,OTHER
+"Invoice Raised On: February 16, 2026",INVOICE_DATE
+Payment Due: 21/06/2026,DUE_DATE
+"Grand Total Incl. GST: 210,509.00 INR",TOTAL_AMOUNT
+Tax Invoice No: AP00047,INVOICE_ID
+Vendor: Bright Solar Solutions,VENDOR_NAME
+"GST @18%: INR 3,458",TAX_AMOUNT
+Supplier Name: Rajdhani Office Solutions,VENDOR_NAME
+"Total Payable: 185,493.00 INR",TOTAL_AMOUNT
+"Integrated GST: Rs 14,404",TAX_AMOUNT
+"GST @12%: 3,879.00 INR",TAX_AMOUNT
+"Rate: Rs. 1,657.00",OTHER
+GST Registration No: 33YDINS1578EZZA,GSTIN
+GST Registration No: 22INSXC1340KLZ8,GSTIN
+Due by 31/03/26,DUE_DATE
+From: Nova Office Supplies,VENDOR_NAME
+Document Date: 2026-05-27,INVOICE_DATE
+"Last Date of Payment: April 15, 2026",DUE_DATE
+"Grand Total Incl. GST: ₹ 41,651.00",TOTAL_AMOUNT
+Bill Number: TXN/26/0026,INVOICE_ID
+Billing Date: 15-05-2026,INVOICE_DATE
+GST Amount: INR 90,TAX_AMOUNT
+Delivery Date: 29/08/2026,OTHER
+Phone: +91-7081410638,OTHER
+Bill No: TAXINV-2026-1005,INVOICE_ID
+"Total Tax: 10,615.25 INR",TAX_AMOUNT
+Prepared On: 24/02/26,INVOICE_DATE
+Dated: 18-07-2026,INVOICE_DATE
+Vendor GSTIN: 08LQVAF1799RDZZ,GSTIN
+Company Name: Nimbus Software Services,VENDOR_NAME
+Invoice Date: 02/07/26,INVOICE_DATE
+Inv No. IN-1591,INVOICE_ID
+Customer Name: Admin Department,OTHER
+Reference No: CNTR/2026/099,INVOICE_ID
+Checked By: Finance Team,OTHER
+Bill Ref: REF/2026/429,INVOICE_ID
+Invoice Ref: TXN/2026/154,INVOICE_ID
+CGST: 511.00 INR,TAX_AMOUNT
+Tax Invoice By: Eastern Digital Labs,VENDOR_NAME
+GST Invoice Number: DOC/26/0016,INVOICE_ID
+Supplier Name: ABC Traders Pvt Ltd,VENDOR_NAME
+Bill Number: SI/26/0006,INVOICE_ID
+"Integrated GST: ₹22,824",TAX_AMOUNT
+GSTIN: 19JOTYD1493VUZH,GSTIN
+GST No: 23WBGLQ1272IHZS,GSTIN
+Tax is payable on reverse charge: No,OTHER
+Bank Name: Punjab National Bank,OTHER
+"Discount: 8,563.00 INR",OTHER
+"Total Invoice Value: INR 82,302",TOTAL_AMOUNT
+Payment Due On: 03-Sep-2026,DUE_DATE
+Original Invoice No - AP-2026-1035,INVOICE_ID
+GST ID: 08DINSX1459HSZR,GSTIN
+Late payment may attract charges,OTHER
+"Generated Date: April 21, 2026",INVOICE_DATE
+"Invoice Generated On: May 23, 2026",INVOICE_DATE
+Tax Invoice ID: GST-0296,INVOICE_ID
+Bill No: CNTR-2026-1045,INVOICE_ID
+Vendor GSTIN: 19FKPUZ1323DKZV,GSTIN
+Payment to be made on or before 2026-09-09,DUE_DATE
+Item Description: Safety Helmet,OTHER
+"Prepared On: June 24, 2026",INVOICE_DATE
+From: Vertex Automation Pvt Ltd,VENDOR_NAME
+Ack No: 100005111106,OTHER
+"Net 30 Due On: May 17, 2026",DUE_DATE
+"Invoice Total: 135,461.00 INR",TOTAL_AMOUNT
+Billing Date: 14/07/2026,INVOICE_DATE
+Inv No. REF-0111,INVOICE_ID
+"Balance Due: ₹126,080",TOTAL_AMOUNT
+Prepared By: Accounts Department,OTHER
+Grand Total: INR 169858.50,TOTAL_AMOUNT

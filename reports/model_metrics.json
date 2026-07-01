@@ -1,0 +1,79 @@
+{
+    "overall_accuracy": 0.98,
+    "best_params": {
+        "clf__C": 10.0
+    },
+    "classification_report": {
+        "DUE_DATE": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 12.0
+        },
+        "GSTIN": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 10.0
+        },
+        "INVOICE_DATE": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 12.0
+        },
+        "INVOICE_ID": {
+            "precision": 0.9285714285714286,
+            "recall": 1.0,
+            "f1-score": 0.9629629629629629,
+            "support": 13.0
+        },
+        "OTHER": {
+            "precision": 1.0,
+            "recall": 0.8666666666666667,
+            "f1-score": 0.9285714285714286,
+            "support": 15.0
+        },
+        "TAX_AMOUNT": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 12.0
+        },
+        "TOTAL_AMOUNT": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 14.0
+        },
+        "VENDOR_NAME": {
+            "precision": 0.9230769230769231,
+            "recall": 1.0,
+            "f1-score": 0.96,
+            "support": 12.0
+        },
+        "accuracy": 0.98,
+        "macro avg": {
+            "precision": 0.981456043956044,
+            "recall": 0.9833333333333334,
+            "f1-score": 0.981441798941799,
+            "support": 100.0
+        },
+        "weighted avg": {
+            "precision": 0.9814835164835165,
+            "recall": 0.98,
+            "f1-score": 0.9796708994708995,
+            "support": 100.0
+        }
+    },
+    "class_distribution": {
+        "OTHER": 75,
+        "TOTAL_AMOUNT": 70,
+        "INVOICE_ID": 65,
+        "VENDOR_NAME": 60,
+        "DUE_DATE": 60,
+        "TAX_AMOUNT": 60,
+        "INVOICE_DATE": 60,
+        "GSTIN": 50
+    }
+}
